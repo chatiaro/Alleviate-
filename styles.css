@@ -1,0 +1,132 @@
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px; 
+    background: transparent;
+}
+
+body{
+    margin-top: 0;
+    margin-left: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    
+}
+#header{
+    background-color: white;    
+    overflow: hidden;    
+    padding: 20px 10px -1000px;  
+    height: 100px; 
+    top: 0;
+    position: fixed;    
+}
+
+#header-right{
+    background: white;        
+    float: right;    
+    padding: 20px 10px 0px 415px;    
+}
+#header a{    
+    float: left;
+    color: #222222; 
+    padding: 12px 17px;  
+    text-decoration: none;
+    border-radius: 4px;
+    line-height: 25px;  
+    font-weight: bold;
+}
+
+#header a.active{
+    background-color: black;
+    color: whitesmoke;
+}
+#header a:hover{
+    background-color: #ddd;
+    color: #222222;
+}
+
+#header p.logo{ 
+    margin-top: -45px;   
+    font-size: 25px;
+    font-weight: bold;
+    color: #222222;
+    display: inline-block;
+
+}
+#parallax1{
+    overflow: hidden;
+    display: inline-block;      
+    background-image: url("images/col1.jpg");
+    height: 100%;
+    min-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    z-index: -1;       
+}
+
+#text1{    
+    padding: 40px 0px;
+    height: 90%;
+    position: sticky;
+    display:inline-block;
+    margin-top: 5%;
+}
+
+#parallax2{
+    display: inline-block;      
+    background-image: url("images/col3.jpg");
+    height: 100%;
+    min-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+#centerd{            
+    margin-top: 45%;    
+    opacity: 0.7;
+    font-size: 60px;    
+    background-color: white;        
+    width: 70%;    
+    text-align: center;        
+}
+#centerd2{  
+    margin-top: 30%;
+    opacity: 0.7;                   
+    font-size: 60px;    
+    background-color: white;        
+    width: 100%;
+    height: 100px;
+    text-align: center;          
+}
+#bottom{
+    bottom: 10px; 
+    
+    margin-left:50%;   
+    position: absolute;
+}
+#bottom2{
+    bottom: 10px; 
+    margin-top: 20%;  
+    position: sticky;
+    
+}
+#parallax2 a{    
+    color: white;
+    background: #222222; 
+    padding: 12px 17px;  
+    text-decoration: none;
+    border-radius: 4px;
+    line-height: 25px; 
+    font-size: 25px; 
+    font-weight: bold;
+}
+#parallax2 a:hover{
+    background: #ddd;
+    color: black;    
+}
