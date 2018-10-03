@@ -9,17 +9,18 @@
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
         <script type="text/javascript" src="script.js"></script>                 
     </head>
-    <body>
-        <div id="header" >
-            <p class="logo"><img src="images/logo.png" height="180" width="220"></p>
-            <div id = "header-right">
-                <a href="index.html" class="active">Welcome</a>
-                <a href="#about" onclick="myFunction()">About</a>
-                <a href="#parallax2">Get Help</a>
-                <a href="">Donate</a>                
+    <body>  
+            <div id="header">
+                    <p class="logo"><img src="images/logo.png" height="180" width="220"></p>
+                    <div id = "header-right">
+                        <a href="index.html" class="active">Welcome</a>
+                        <a href="Pages/About/index.html" onclick="myFunction()">About</a>
+                        <a href="#parallax2">Get Help</a>
+                        <a href="">Donate</a>                
+                    </div>
             </div>
-        </div>
-    
+            <div id="scroller"></div>      
+                    <!----------------------------SCREEN ONE---------------------------->
         <div id="parallax1" >
             <div id="centerd">
                     <p style="color:black;">Alleviate Foundation</p>                
@@ -28,23 +29,32 @@
                     <a href="#text1" style="text-decoration: none"><img src="images/down_arrow_white.png" height="40" width="40"></a>                            
             </div>
         </div>
+
+        <!------------------------------SCREEN TWO------------------------->
+
         <div id="text1">
-            <p style="font-weight: bold; height: 10%; width: 100%; color: black; font-size:100px; text-align:center; ">
+            <p>
                 <z style="color:red">MORE THAN 53%</z> OF CHILDREN IN INDIA SUFFER ABUSE AS A CHILD.                
             </p> 
-            <div id="bottom">
+            <div id="bottom2">
                 <a href="#parallax2" style="text-decoration: none"><img src="images/down_arrow.png" height="40" width="40"></a>                            
             </div>                       
-        </div>        
+        </div>    
+
+        <!------------------------------SCREEN THREE------------------------->
+
         <div id="parallax2"> 
             <div id="centerd2">
                 <p style="color:black;"><b>WE</b> can save them</p> 
                 <a href="">DONATE</a>
                 <a href="">GET HELP</a>
-                <div id="bottom2">
-                        <a href="#parallax1" style="text-decoration: none"><img style="transform: rotateX(180deg);" src="images/down_arrow_white.png" height="40" width="40"></a>                                                    
+                <div id="bottom3">
+                        <a href="#scroller" style="text-decoration: none"><img style="transform: rotateX(180deg);" src="images/down_arrow_white.png" height="40" width="40"></a>                                                    
                 </div>                          
             </div>            
         </div>
+        
+        <!--------------------------------HEADER----------------------------->        
+      
     </body>
 </html>
