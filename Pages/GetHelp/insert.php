@@ -1,6 +1,6 @@
 <?php
 $file = 'insert.php';
-$remote_file = 'PROBLEM.txt';
+$remote_file = 'PRO.txt';
 $ftp_server='ftp.alleviate.5gbfree.com';
 $ftp_user_name = 'chati@alleviate.5gbfree.com';
 $ftp_user_pass = 'password';
