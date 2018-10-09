@@ -1,30 +1,23 @@
 <?php
-$servername = "ns1.5gbfree.com";
-$username = "alleviatefound_db";
-$password = "BEARSBEETSBATTLESTARGALACTICA";
-$dbname = "alleviatefound_Help";
+$file = 'insert.php';
+$remote_file = 'PROBLEM.txt';
+$ftp_server='ftp.alleviate.5gbfree.com';
+$ftp_user_name = 'chati@alleviate.5gbfree.com';
+$ftp_user_pass = 'password';
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
+// set up basic connection
+$conn_id = ftp_connect($ftp_server);
 
-// sql to create table
-$sql = "CREATE TABLE MyGuests (
-id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
-firstname VARCHAR(30) NOT NULL,
-lastname VARCHAR(30) NOT NULL,
-email VARCHAR(50),
-reg_date TIMESTAMP
-)";
+// login with username and password
+$login_result = ftp_login($conn_id, $ftp_user_name, $ftp_user_pass);
 
-if ($conn->query($sql) === TRUE) {
-    echo "Table MyGuests created successfully";
+// upload a file
+if (ftp_put($conn_id, $remote_file, $file, FTP_ASCII)) {
+ echo "successfully uploaded $file\n";
 } else {
-    echo "Error creating table: " . $conn->error;
+ echo "There was a problem while uploading $file\n";
 }
 
-$conn->close();
+// close the connection
+ftp_close($conn_id);
 ?>
